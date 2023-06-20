@@ -1,0 +1,27 @@
+@import '../src/css/InicioJuego.css';
+@import '../src/css/Juego.css';
+@import '../src/css/FinJuego.css';
+
+@font-face {
+  font-family: 'miFuente';
+  src: url(/src/tipografias/HARRYP__.TTF);
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+font-family: 'miFuente';
+background: rgb(6,27,41);
+background: linear-gradient(176deg, rgba(6,27,41,1) 0%, rgba(99,170,176,1) 100%);
+color: #fcd92d;
+text-shadow: 2px 2px black;
+line-height: -25px;
+}
+span{
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+

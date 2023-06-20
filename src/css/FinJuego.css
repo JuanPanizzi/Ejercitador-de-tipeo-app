@@ -1,0 +1,56 @@
+.ctn-finJuego{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.finJuego{
+    background-color: #3D5368;
+    width: 60%;
+    padding: 10px;
+    border: 2px solid black;
+    box-shadow: 2px 2px 5px black;
+}
+.finJuego h1{
+    background-color: #70808F;
+    font-size: 3rem;
+    padding: 10px;
+    border: 2px solid black;
+}
+.finJuego p{
+    font-size: 2.3rem;
+    color: white;
+}
+.finJuego button{
+    font-size: 2.2rem;
+    background-color: #cfcfcb;
+    transition: all 0.1s ease-out;
+    padding: 10px;
+}
+
+.finJuego button:hover{
+    box-shadow: 2px 2px 5px #fcd92d, -2px -2px 2px #fcd92d;
+    transform: translateY(-5px);
+    color: #fcd92d;
+    text-shadow: 2px 2px  black;
+}
+@media (max-width: 768px) {
+    .finJuego{
+        width: 85%;
+    }
+}
+@media (max-width: 576px) {
+    .finJuego{
+        width: 95%;
+    }
+    .finJuego h1{
+        font-size: 2.5rem;
+    }
+    .finJuego p{
+        font-size: 1.6rem;
+    }
+    .finJuego button{
+        font-size: 1.5rem;
+
+    }
+}

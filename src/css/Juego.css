@@ -1,0 +1,62 @@
+.ctn-juego{
+height: 100vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.ctn-superior-juego, .ctn-inferior-juego{
+    background-color: #3D5368;
+    width: 60%;
+    padding: 10px;
+    border: 2px solid black;
+    box-shadow: 2px 2px 5px black;
+}
+.ctn-superior-juego h1, .ctn-inferior-juego h1{
+    background-color: #70808F;
+    font-size: 3rem;
+    padding: 10px;
+    border: 2px solid black;
+}
+.ctn-inferior-juego{
+    margin-top: 20px;
+}
+.ctn-inferior-juego h1{
+    font-size: 2.2rem;
+}
+.ctn-superior-juego p, .ctn-inferior-juego p{
+    font-size: 2.3rem;
+    color: white;
+}
+.inputJuego{
+    font-size: 2.5rem;
+    width: 55%;
+    text-align: center;
+}
+.ctn-superior-juego button{
+    background-color: #cfcfcb;
+    font-size: 2.3rem;
+}
+@media (max-width:768px) {
+    .ctn-superior-juego, .ctn-inferior-juego{
+        width: 85%;
+    }
+}
+@media (max-width: 576px) {
+    .ctn-superior-juego, .ctn-inferior-juego{
+        width: 95%;
+    }
+    .ctn-superior-juego h1{
+        font-size: 2.5rem;
+    }
+    .ctn-superior-juego p, .ctn-inferior-juego p{
+        font-size: 1.6rem;
+    }
+    
+    .inputJuego{
+        font-size: 1.6rem;
+    }
+    .ctn-superior-juego button{
+        font-size: 1.5rem;
+    }
+}
