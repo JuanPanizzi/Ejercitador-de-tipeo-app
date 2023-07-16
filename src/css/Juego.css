@@ -18,6 +18,10 @@ align-items: center;
     padding: 10px;
     border: 2px solid black;
 }
+.ctn-superior-juego h1{
+    font-size: 2.6em;
+}
+
 .ctn-inferior-juego{
     margin-top: 20px;
 }
@@ -28,14 +32,22 @@ align-items: center;
     font-size: 2.3rem;
     color: white;
 }
+strong{
+    font-size: 2.3rem;
+    color: #fcd92d;
+}
 .inputJuego{
-    font-size: 2.5rem;
+    font-size: 2rem;
     width: 55%;
     text-align: center;
 }
+.inputError{
+    outline: none;
+    border-color: red;
+}
 .ctn-superior-juego button{
     background-color: #cfcfcb;
-    font-size: 2.3rem;
+    font-size: 2rem;
 }
 @media (max-width:768px) {
     .ctn-superior-juego, .ctn-inferior-juego{

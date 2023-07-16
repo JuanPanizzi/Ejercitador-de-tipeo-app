@@ -16,7 +16,7 @@ import { useEffect, useState } from "react"
             const nombresPersonajes = data.map((p)=> p.personaje)
             setPersonajes(nombresPersonajes)
         } catch (error) {
-            alert('hubo un error')
+            alert('Intenta otra vez')
         }
     }
     const getHechizos = async ()=> {

@@ -10,8 +10,8 @@ export const FinJuego = (props) => {
     <div className='finJuego text-center py-3'>
         <h1 className='p-2 '><span>¡</span>Fin del juego<span>!</span> </h1>
         <p >Resultados:</p>
-        <p >Caracteres Tipeados: {caracteresTipeados} </p>
-        <p >Puntos: {palabrasAcertadas} </p>
+        <p >Caracteres Tipeados: <strong>{caracteresTipeados}</strong> </p>
+        <p >Puntos: <strong>{palabrasAcertadas}</strong> </p>
         <button onClick={()=> handleRestart()} className=' rounded-2'>Reiniciar Juego</button>
     </div>
   

@@ -16,10 +16,11 @@ export const Wpm = () => {
     const [time, setTime] = useState(61)
     const [usoHechizo, setUsoHechizo] = useState('')
     const [showGame, setShowGame] = useState(false)
+    const [error, setError] = useState(false)
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        if (buffer === name) {
+        if (buffer === name.toUpperCase().replace("/", " ")) {
             setCharacters((characters) => characters + name.length)
             switch (tema) {
                 case 'personajes':
@@ -39,6 +40,9 @@ export const Wpm = () => {
                     break;
             }
             setCounterWords((counterWords) => counterWords + 1)
+            setError(false)
+        }else{
+            setError(true);
         }
         setBuffer('')
     }
@@ -94,7 +98,7 @@ export const Wpm = () => {
     return (
         <>
             {time !== 0 ? (
-                <Juego name={name}
+                <Juego name={name.toUpperCase()}
                     usoHechizo={usoHechizo}
                     time={time}
                     tema={tema}
@@ -102,7 +106,8 @@ export const Wpm = () => {
                     characters={characters}
                     counterWords={counterWords}
                     setBuffer={setBuffer}
-                    handleSubmit={handleSubmit} />
+                    handleSubmit={handleSubmit} 
+                    error={error} />
             ) : (<>
                 <FinJuego caracteresTipeados={characters}
                     setShowGame={setShowGame}

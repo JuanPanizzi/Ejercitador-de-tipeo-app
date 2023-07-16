@@ -18,7 +18,7 @@ export const InicioJuego = (props) => {
                 <div className='ctn-superior mx-auto  text-center '>
                     <h1> <span>¡</span>PRACTICA TU TIPEO<span>!</span></h1>
                     <p>Tipea la mayor cantidad de caracteres en un minuto</p>
-                    <p> <span>¡</span>Recuerda respetar las mayúsculas y minúsculas<span>!</span></p>
+                    <p> <span>¡</span>Recuerda respetar los tildes<span>!</span></p>
                 </div>
             </div>
 
