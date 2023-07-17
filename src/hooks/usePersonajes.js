@@ -28,7 +28,7 @@ import { useEffect, useState } from "react"
             setObjetoHechizos(data)
 
         } catch (error) {
-            alert('hubo un error')
+            console.log('hubo un error')
         }
     }
     const getLibros = async ()=> {
@@ -40,8 +40,7 @@ import { useEffect, useState } from "react"
         } catch (error) {
             console.log('hubo un error')
         }
-    }
-    
+    }    
 
     useEffect(() => {
         getPersonajes()

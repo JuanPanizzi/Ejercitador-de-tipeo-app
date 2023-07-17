@@ -7,8 +7,6 @@ export const Main = () => {
 
   const {personajes, libros, hechizos } =   useContext(HarryPotterContext);
     
-  //const [value, setValue] = useState(true)
-
     return (
     <>
     {
